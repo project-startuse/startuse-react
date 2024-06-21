@@ -3,4 +3,47 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-family: 'Playwrite NG Modern', cursive;
+    color: rgba(255, 255, 255, 0.993);
+    background-image: linear-gradient(45deg, #412234 0%, #2E4052 35%, #412234 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-image {
+    padding: 4rem 0;
+}
+
+.explore {
+    margin: 1rem 0;
+}
+
+.explore a {
+    padding: 0.5rem 1rem;
+    border: 3px solid #412234;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #412234;
+    font-weight: bold;
+    font-family: 'Roboto Mono';
+    font-style: italic;
+    transition: all 0.2s;
+}
+
+.explore a:hover {
+    background-color: #FFC857;
+    border: 3px solid #FFC857;
 }
