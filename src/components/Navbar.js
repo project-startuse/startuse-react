@@ -1,5 +1,5 @@
 import React from 'react';
-import startuseLogo from '../resources/startuse-logo-png.png';
+import startuseLogo from '../resources/startuse-logo-temp-png.png';
 import '../styles/Navbar.css';
 import { Link } from 'react-router-dom';
 
