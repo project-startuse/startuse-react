@@ -5,14 +5,31 @@
     justify-content: space-between;
     margin: 0;
     padding: 0.5rem;
+    background-color: #412234;
 }
 
-.btn-grp {
+.navbar img:hover {
+    cursor: pointer;
+}
+
+.navbar .btn-grp {
     padding: 0.5rem;
 }
 
-.btn-grp a {
+.navbar .btn-grp a {
     text-decoration: none;
     margin: 0 0.5rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Roboto Mono';
+    font-weight: normal;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .btn-grp a:hover {
+    background-color: white;
+    color: #2E4052;
+    box-shadow: 0 5px #2E4052;
 }
