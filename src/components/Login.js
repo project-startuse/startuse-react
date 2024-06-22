@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Login.css';
 import axios from '../utils/axios';
+import loginRegisterImg from '../resources/login-register-img.svg';
 
 function Login() {
     const [content, setContent] = useState({});
@@ -19,11 +20,15 @@ function Login() {
 
     return (
         <div className='login'>
-            <div className='form'>
+            <span className='form'>
+                <h1>Login</h1>
                 <input type='email' name='email' placeholder='email' onChange={(e) => handleChange(e)}/>
                 <input type='password' name='password' placeholder='password' onChange={(e) => handleChange(e)} />
                 <button onClick={handleSubmit}>Submit</button>
-            </div>
+            </span>
+            <span className='login-register-img'>
+                <img src={loginRegisterImg} alt='login-register' height={400} />
+            </span>
         </div>
     );
 }
