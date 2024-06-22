@@ -8,6 +8,10 @@
     background-color: #412234;
 }
 
+.navbar img {
+    margin: 0 1rem;
+}
+
 .navbar img:hover {
     cursor: pointer;
 }
