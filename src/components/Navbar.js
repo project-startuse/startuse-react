@@ -12,7 +12,7 @@ function Navbar() {
             </span>
             <span className='btn-grp'>
                 <span><Link to={'/login'} >Login</Link></span>
-                <span><Link to={'/register'} >Register</Link></span>
+                <span><Link to={'/register/customer'} >Register</Link></span>
             </span>
         </div>
     );

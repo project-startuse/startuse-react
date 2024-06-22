@@ -1,0 +1,58 @@
+.register .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: #2E4052;
+    border-radius: 2rem;
+    padding: 0 0.5rem;
+    margin: 0.5rem;
+}
+
+.register .header {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.register .nav a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: white;
+    font-family: 'Roboto Mono';
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+}
+
+.register .form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:center;
+    width: 50%;
+    height: 90%;
+    flex-wrap: wrap;
+}
+
+.register .form .address {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.register .page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.register input {
+    margin: 1rem;
+}
