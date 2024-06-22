@@ -51,7 +51,7 @@ function Register() {
         <div className='register'>
             <span className='form'>
                 <div className='header'>
-                    <h1>Sign Up as</h1>
+                    <h1>Register as</h1>
                     <span className='nav'>
                         <Link to={'/register/customer'} style={type === 'customer' ? {backgroundColor:  "#BDD9BF", color: '#2E4052', fontWeight: 'bold'} : {}} onClick={beforeTabChange}>Customer</Link>
                         <Link to={'/register/company'} style={type === 'company' ? {backgroundColor:  "#BDD9BF", color: '#2E4052', fontWeight: 'bold'} : {}} onClick={beforeTabChange}>Company</Link>
@@ -64,7 +64,7 @@ function Register() {
                     <div className='page'>
                         <RegisterFinish handleAddressChange={handleAddressChange} address={address}/>
                         <>
-                            <button onClick={() => setIsFinalPage(false)}>Back</button>
+                            <button className='back' onClick={() => setIsFinalPage(false)}>Back</button>
                             <button onClick={handleSubmit}>Submit</button>
                         </>
                     </div>
@@ -83,13 +83,13 @@ function Register() {
 
                         <>
                             <span></span>
-                            <button onClick={() => setIsFinalPage(true)}>Next</button>
+                            <button className='next' onClick={() => setIsFinalPage(true)}>Next</button>
                         </>
                     </div>
                 }
             </span>
             <span className='login-register-img'>
-                <img src={loginRegisterImg} alt='login-register' />
+                <img src={loginRegisterImg} alt='login-register' width={500} />
             </span>
         </div>
     );
