@@ -18,6 +18,22 @@
 
 .navbar .btn-grp {
     padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .btn-grp h2 {
+    font-size: 1rem;
+    color: #FFC857;
+    font-family: 'Playwrite MX';
+    /* background-color: #2E4052; */
+    /* padding: 0.25rem 0.5rem; */
+    transition: all 0.5s;
+    border-radius: 1rem;
+    margin: 0;
+    padding: 0 0.5rem;
 }
 
 .navbar .btn-grp a {
