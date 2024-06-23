@@ -15,6 +15,11 @@ function Navbar() {
         setAccountHover(false);
     }
 
+    const handleLogout = () => {
+        setAccountHover(false);
+        localStorage.removeItem('user');
+    }
+
     return (
         <div className='navbar'>
             <span onClick={() => navigate('/')}>
@@ -39,7 +44,7 @@ function Navbar() {
                             <span>
                                 <Link to={'/feed'}>Feed</Link>
                                 <Link to={'/profile'}>Profile</Link>
-                                <Link to={'/'} onClick={() => localStorage.removeItem('user')}>Logout</Link>
+                                <Link to={'/'} onClick={handleLogout}>Logout</Link>
                             </span>
                             : <></>
                         }
