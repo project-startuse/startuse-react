@@ -11,7 +11,11 @@ function Feed() {
     const user = getUser();
 
     const loadFeed = async () => {
-        const res = await axios.get(`/customers/feed/${user.id}`, authHeader());
+        let res;
+        if(user)
+            res = await axios.get(`/customers/feed/${user.id}`, authHeader());
+        else
+            res = await axios.get(`/companies`);
         setFeed(res.data);
     }
 

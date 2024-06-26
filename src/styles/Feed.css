@@ -9,11 +9,27 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: start;
     background-color: whitesmoke;
-    padding: 1rem;
+    padding: 0 1rem;
     margin: 1rem;
     width: 60%;
+    overflow-x: auto;
+    height: 39rem;
+}
+
+.feed-area::-webkit-scrollbar {
+    width: 10px;
+}
+
+.feed-area::-webkit-scrollbar-thumb {
+    background-color: #412234;
+    border-radius: 1rem;
+}
+
+.feed-area::-webkit-scrollbar-track {
+    /* background-color: #FFC857; */
+    border-radius: 1rem;
 }
 
 .feed-item {
@@ -21,6 +37,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
+    margin: 1rem 0;
     padding: 1rem;
     color: #FFC857;
     background-color: #412234;
@@ -47,10 +64,11 @@
 .feed-item .header button {
     padding: 0.5rem 1rem;
     border-radius: 1rem;
-    background-color: whitesmoke;
+    background-color: #FFC857;
     color: #412234;
     font-family: 'Roboto Mono';
-    transition: all 0.2s;
+    box-shadow: 0 2px whitesmoke;
+    transition: all 0.1s;
 }
 
 .feed-item .header button:hover {
@@ -58,10 +76,12 @@
 }
 
 .feed-item .header button:active {
-    transform: scale(1.2);
+    /* transform: scale(0.8); */
+    translate: 0 2px 0;
     background-color: #FFC857;
     border-radius: 1rem;
     cursor: pointer;
+    box-shadow: none;
 }
 
 .feed-item .info {
