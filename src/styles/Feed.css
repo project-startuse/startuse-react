@@ -1,0 +1,92 @@
+.feed {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.feed-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 1rem;
+    margin: 1rem;
+    width: 60%;
+}
+
+.feed-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 1rem;
+    color: #FFC857;
+    background-color: #412234;
+    border-radius: 1rem;
+    font-family: 'Roboto Mono';
+    width: 95%;
+}
+
+.feed-item .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.feed-item .name {
+    font-size: 2rem;
+    background-color: #412234;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.feed-item .header button {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    color: #412234;
+    font-family: 'Roboto Mono';
+    transition: all 0.2s;
+}
+
+.feed-item .header button:hover {
+    cursor: pointer;
+}
+
+.feed-item .header button:active {
+    transform: scale(1.2);
+    background-color: #FFC857;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.feed-item .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 100%;
+    font-family: 'Fira Sans';
+}
+
+.feed-item .sub-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 75%;
+    margin: 0 0 1rem 0;
+}
+
+.feed-item .sub-info span {
+    margin: 0;
+    padding: 2px;
+}
+
+.feed-item .info, .address, .description {
+    padding: 0 0.5rem;
+}
